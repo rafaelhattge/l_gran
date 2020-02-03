@@ -54,12 +54,12 @@ node_modules/
 
 # ignore composer vendor directory
 /vendor
-/mockup
 # ignore components loaded via Bower
 /bower_components
 
 # ignore jekyll build directory
 /_site
+/mockup
 
 # ignore OS generated files
 ehthumbs.db
