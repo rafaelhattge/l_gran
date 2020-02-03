@@ -22,8 +22,8 @@ img {
 
 header {
     background-color: #585757;
-    margin-top: 5.375em;
-    height: 7.5em;
+    margin-top: 5.375rem;
+    height: 7.5rem;
     display: flex;
     align-items: center;
 }
@@ -60,6 +60,46 @@ nav ul a {
 
 main {
     flex: 1 0 auto;
+}
+
+.home-section {
+    background-image: url(../img/background1.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {
+    font-family: 'Chavo', sans-serif;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: end;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 8rem;
+    margin-right: 12rem;
+    margin-bottom: .5rem;
+}
+
+.cta {
+    font-family: 'Chivo', sans-serif;
+    color: #ffc901;
+    text-decoration: none;
+    margin-right: 12rem;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.cta:visited {
+    color: #ffc901;
+}
+
+.home-section .section-logo {
+    margin-top: 6rem;
+    margin-right: 12rem;
+    width: 320px;
 }
 
 footer {
