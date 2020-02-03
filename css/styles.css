@@ -1,0 +1,85 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #585757;
+    margin-top: 5.375em;
+    height: 7.5em;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    font-family: 'Chivo', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-nav {
+    width: 1440px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.lgran-logo {
+    display: inline-block;
+    width: 160px;
+}
+
+
+footer {
+    border-top: 5px dotted #ffc901;
+}
+
+.footer-content {
+    width: 840px;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-wrapper {
+    width: 250px;
+    margin-bottom: 3.625em;
+}
+
+.social-media {
+    margin-top: 3.625em;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    width: 46px;
+}
