@@ -20,11 +20,18 @@ img {
     height: auto;
 }
 
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
 header {
-    background-color: #585757;
+    background-color: rgba(90, 90, 90, .8);
     margin-top: 5.375rem;
     height: 7.5rem;
+    width: 100%;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
 }
 
@@ -34,13 +41,9 @@ nav {
     width: 100%;
 }
 
-.header-nav {
-    width: 1440px;
-}
-
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
     width: 100%;
@@ -50,7 +53,8 @@ nav ul a {
     text-decoration: none;
     color: #FFF;
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+    margin: 0 1em;
 }
 
 .lgran-logo {
@@ -62,16 +66,30 @@ main {
     flex: 1 0 auto;
 }
 
-.home-section {
-    background-image: url(../img/background1.png);
-    background-repeat: no-repeat;
+.section-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
+.home-section {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/bg-overlay.png');
+    overflow: visible;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.home-bg {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    /* z-index: -1; */
+    width: 700px;
+}
+
 h1 {
-    font-family: 'Chavo', sans-serif;
+    font-family: 'Chivo', sans-serif;
     color: #FFF;
     text-transform: uppercase;
     text-align: end;
@@ -79,15 +97,44 @@ h1 {
     font-weight: 400;
     font-size: 2.5rem;
     margin-top: 8rem;
-    margin-right: 12rem;
     margin-bottom: .5rem;
+}
+
+.book-table {
+    font-family: 'Chivo', sans-serif;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    text-align: right;
+
+}
+
+.h2-wrapper {
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(80, 80, 80, 0), rgba(80, 80, 80, 0), rgba(80, 80, 80, .8));
+    /* margin-bottom: 2rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.h2-container {
+    width: 100%;
+    display: block;
+    text-align: right;
+    margin: 0 auto;
+}
+
+h2 a {
+    color: #ffc901;
+    text-decoration: none;
+    margin-left: auto;
 }
 
 .cta {
     font-family: 'Chivo', sans-serif;
     color: #ffc901;
     text-decoration: none;
-    margin-right: 12rem;
     font-size: 1.3em;
     text-transform: uppercase;
 }
@@ -98,11 +145,12 @@ h1 {
 
 .home-section .section-logo {
     margin-top: 6rem;
-    margin-right: 12rem;
+    margin-bottom: 6rem;
     width: 320px;
 }
 
 footer {
+    background-color: #000;
     border-top: 5px dotted #ffc901;
     flex-shrink: 0;
 }
